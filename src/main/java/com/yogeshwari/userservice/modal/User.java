@@ -1,13 +1,16 @@
 package com.yogeshwari.userservice.modal;
 
 import lombok.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 @NoArgsConstructor
-@AllArgsConstructor
-@Getter
 @Setter
 @Data
+@Builder
+@Component
 public class User {
     private long id;
     private String username;
@@ -16,6 +19,8 @@ public class User {
     private String name;
     private String phoneNumber;
     private String role;
+
+    @Autowired
     private Vehicle vehicle;
 
 

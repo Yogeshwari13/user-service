@@ -1,12 +1,13 @@
 package com.yogeshwari.userservice.modal;
 
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 @Data
+@Component
 public class Vehicle {
     private enum vehicleType {
         Car,
